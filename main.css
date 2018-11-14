@@ -1,6 +1,7 @@
 body {
-  background-image: url(poke.jpg);
-  background-size:100%;
+  background-image: url(pokedex-background.jpg);
+  background-size: 100%;
+  background-position: top;
   background-repeat:no-repeat;
 
 }
@@ -18,8 +19,10 @@ h1 {
 
 }
 
-.col-sm-9 .col-sm-3 {
-  border: 2px solid blue;
+.container-fluid {
+  margin-top: 50px;
+  align-content: center;
+
 }
 
 h2 {

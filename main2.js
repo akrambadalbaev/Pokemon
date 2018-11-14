@@ -14,6 +14,7 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/245.json";
      var pokeinfo = JSON.parse(this.responseText);
 
      let Suicune = {
+      // name: pokeinfo.name,
       hp: pokeinfo.stats[5].base_stat,
       attack: pokeinfo.stats[4].base_stat,
       defense: pokeinfo.stats[3].base_stat,
@@ -33,6 +34,8 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/245.json";
 }
 
 function pokeStats(Suicune) {
+  // let name = document.getElementById("pokemon-name");
+  // name.innerHTML = Suicune.name
   let hp = document.getElementById("hp");
   hp.innerHTML = Suicune.hp;
   let attack = document.getElementById("attack");
@@ -56,6 +59,7 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/145.json";
      var pokeinfo = JSON.parse(this.responseText);
 
      let Zapdos = {
+      // name: pokeinfo.name,
       hp: pokeinfo.stats[5].base_stat,
       attack: pokeinfo.stats[4].base_stat,
       defense: pokeinfo.stats[3].base_stat,
@@ -75,6 +79,8 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/145.json";
 }
 
 function pokeStats(Zapdos) {
+  // let name = document.getElementById("pokemon-name");
+  // name.innerHTML = Zapdos.name
   let hp = document.getElementById("hp");
   hp.innerHTML = Zapdos.hp;
   let attack = document.getElementById("attack");
@@ -98,7 +104,7 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/146.json";
      var pokeinfo = JSON.parse(this.responseText);
 
      let Moltres = {
-      name: pokeinfo.name,
+      // name: pokeinfo.name,
       hp: pokeinfo.stats[5].base_stat,
       attack: pokeinfo.stats[4].base_stat,
       defense: pokeinfo.stats[3].base_stat,
@@ -118,8 +124,8 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/146.json";
 }
 
 function pokeStats(Moltres) {
-  let name = document.getElementById("pokemon-name");
-  name.innerHTML = Moltres.name
+  // let name = document.getElementById("pokemon-name");
+  // name.innerHTML = Moltres.name
   let hp = document.getElementById("hp");
   hp.innerHTML = Moltres.hp;
   let attack = document.getElementById("attack");
