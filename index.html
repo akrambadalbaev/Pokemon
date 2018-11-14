@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Trainer: Imperator</title>
 
 <!-- google font -->
@@ -25,12 +26,31 @@
 
 <!-- bootstrap grid -->
 
-<div class=“container-fluid”>
- <div class=“row”>
-   <div class="col-md-10"><p>123Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p></div>
-   <div class="col-md-2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p></div>
- </div>
-</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-9">
+      <img id="suicune" src="images7.jpeg" width="275px" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onClick="getSuicune()">
+
+      <img id="zapdos" src="images8.jpg" width="275px" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onClick="getZapdos()">
+
+      <img id="moltres" src="images9.jpg" width="275px" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onClick="getMoltres()">
+    </div>
+
+
+
+    <div class="col-sm-3">
+      <br>
+      <h2><span id="pokemon-name"></span></h2><br>
+      <h3><span>HP: </span><span id="hp"></span></h3>
+      <h3><span>Attack: </span><span id="attack"></span></h3>
+      <h3><span>Defense: </span><span id="defense"></span></h3>
+      <h3><span>Ability: </span><span id="abilities"></span></h3><br>
+
+
+
+      <div id="pokemon-image">
+      </div>
+    </div>
 
 <!-- Footer and links to API -->
 <!-- <footer>
@@ -50,7 +70,7 @@
 
 
 <!-- JavaScript -->
-<script src="main.js"></script>
+<script src="main2.js"></script>
 
 <!-- Bootstrap CDN -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

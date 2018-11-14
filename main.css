@@ -18,12 +18,29 @@ h1 {
 
 }
 
-.col-md-10 .col-md-2 {
+.col-sm-9 .col-sm-3 {
   border: 2px solid blue;
+}
+
+h2 {
+  font-size: 4vw;
+  color: black;
+  font-family: "Zilla Slab Highlight";
+}
+
+h3 {
+  font-size: 3vw;
+  color: black;
+  font-family: "Zilla Slab Highlight";
 }
 
 .button {
   width: 100px;
+}
+
+/* Make Pokemon name all capital letters */
+#pokemon-name {
+  text-transform: uppercase;
 }
 
 footer {
