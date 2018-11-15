@@ -1,13 +1,13 @@
 let pokemonList = [];
-
-// Trainer name
-class Trainer {
-  constructor(name) {
-    this.name = name;
-
-  }
-
-let Trainer = new Trainer('Imperator');
+//
+// // Trainer name
+// class Trainer {
+//   constructor(name) {
+//     this.name = name;
+//
+//   }
+//
+// let Trainer = new Trainer('Imperator');
 
 // function to get Pokemon
 
@@ -16,8 +16,8 @@ function getPokemon(idNumber) {
 // link to pokemon API
 let apiLink = "https://fizal.me/pokeapi/api/v2/id/" + idNumber +".json";
 // link to images
-let apiLinkImg = "http://assets.pokemon.com/assets/cms2/img/pokedex/full/" + idNumber + ".png";
-console.log(apiLinkImg);
+// let apiLinkImg = "http://assets.pokemon.com/assets/cms2/img/pokedex/full/" + idNumber + ".png";
+// console.log(apiLinkImg);
 
 var newcall = new XMLHttpRequest();
 newcall.onreadystatechange = function() {
@@ -29,8 +29,8 @@ newcall.onreadystatechange = function() {
     hp: pokeinfo.stats[5].base_stat,
     attack: pokeinfo.stats[4].base_stat,
     defense: pokeinfo.stats[3].base_stat,
-    ability1: pokeinfo.abilities[0].ability.name,
-    ability2: pokeinfo.abilities[1].ability.name,
+    ability: pokeinfo.abilities[0].ability.name,
+
     id: pokeinfo.id,
   }
      pokemonList.push(Pokemon);
@@ -51,8 +51,6 @@ function pokeStats(Pokemon) {
   attack.innerHTML = Pokemon.attack;
   let defense = document.getElementById("defense");
   defense.innerHTML = Pokemon.defense;
-  let ability1 = document.getElementById("ability1");
-  ability.innerHTML = Pokemon.ability;
-  let ability2 = document.getElementById("ability2");
+  let ability = document.getElementById("abilities");
   ability.innerHTML = Pokemon.ability;
 }
