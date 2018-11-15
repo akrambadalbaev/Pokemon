@@ -35,17 +35,25 @@ h3 {
   font-size: 3vw;
   color: black;
   font-family: "Zilla Slab Highlight";
+
 }
 
-.button {
-  width: 100px;
+/* #suicune #zapdos  */
+
+#moltres:hover {
+  border-radius:100%;
 }
 
-/* Make Pokemon name all capital letters */
-#pokemon-name {
-  text-transform: uppercase;
+#suicune:hover {
+  border-radius:100%;
 }
+
+#zapdos:hover {
+  border-radius:100%;
+}
+
 
 footer {
   align-items: bottom;
+
 }

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Trainer: ♔ĬฬÞẽŘąŦøŘ♔</title>
 
+<!-- animate   -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <!-- google font -->
 
 <link href='https://fonts.googleapis.com/css?family=Zilla Slab Highlight' rel='stylesheet'>
@@ -16,34 +19,41 @@
 <!-- CSS -->
 <link rel="stylesheet" href="main.css">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
 <!-- header -->
 
 <h1>Trainer: ♔ĬmÞéŘąŦøŘ♔</h1>
 
 <h3>Choose a Pokemon to see its stats.</h3>
+
 <!-- bootstrap grid -->
 
-<div class="container-fluid">
+<!-- run js function
+<!-- getElementById to send the stats to the empty place in span with ID -->
+
+<!-- span because div doesn't work -->
+
+<div class="container">
   <div class="row">
     <div class="col-sm-4">
       <img id="suicune" src="images7.jpeg" height= "250px" width="320px" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onClick="getSuicune()"><br>
       <center><h3>Suicune</h3></center>
 </div>
-<div class="col-sm-4">
+
+    <div class="col-sm-4">
       <img id="zapdos" src="images8.jpg" height= "250px" width="320px" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onClick="getZapdos()"><br>
       <center><h3>Zapdos</h3></center>
 </div>
-<div class="col-sm-4">
+
+    <div class="col-sm-4">
       <img id="moltres" src="images9.jpg" height= "250px" width="320px" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onClick="getMoltres()"><br>
       <center><h3>Moltres</h3></center>
     </div>
 
-
-<div class=row>
+  <div class=row>
     <div class="col-sm-12">
       <br>
       <!-- <h2><span id="pokemon-name"></span></h2><br> -->
@@ -51,23 +61,18 @@
       <h3><span>Attack: </span><span id="attack"></span></h3>
       <h3><span>Defense: </span><span id="defense"></span></h3>
       <h3><span>Ability: </span><span id="abilities"></span></h3><br>
+    </div>
+    </center>
+  </div>
 </div>
-</center>
-
 
 <!-- Footer and links to API -->
-<!-- <footer>
+<footer>
   <center>
   Created by Akram Badalbaev, 2018<br>
   using the <a href="https://pokeapi.co/">Pokemon API</a>.
 </center>
-</footer> -->
-
-
-
-
-
-
+</footer>
 
 
 
@@ -79,6 +84,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>

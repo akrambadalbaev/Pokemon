@@ -1,8 +1,9 @@
+// scss
 $color_1: black;
 $font_family_1: "Zilla Slab Highlight";
 
 /* Grid */
-/* Make Pokemon name all capital letters */
+
 body {
 	background-image: url(pokedex-background.jpg);
 	background-size: 100%;
@@ -15,7 +16,7 @@ h1 {
 	text-align: left;
 	font-family: $font_family_1;
 }
-.container-fluid {
+.container {
 	display: flex;
 	margin-top: 50px;
 	align-content: center;

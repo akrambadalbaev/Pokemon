@@ -1,4 +1,4 @@
-// FUNCTION TO RETRIEVE POKEMON STATS
+//  array to get pokemon stats
 
 pokemonList = [];
 
@@ -6,8 +6,9 @@ pokemonList = [];
 
 function getSuicune() {
 
-let apiLink = "https://fizal.me/pokeapi/api/v2/id/245.json";
+let API = "https://fizal.me/pokeapi/api/v2/id/245.json";
 
+// ajax
  var newcall = new XMLHttpRequest();
  newcall.onreadystatechange = function() {
    if (this.readyState == 4 && this.status == 200) {
@@ -18,9 +19,7 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/245.json";
       hp: pokeinfo.stats[5].base_stat,
       attack: pokeinfo.stats[4].base_stat,
       defense: pokeinfo.stats[3].base_stat,
-      ability: pokeinfo.abilities[0].ability.name,
-      id: pokeinfo.id
-
+      ability: pokeinfo.abilities[0].ability.name
 
      }
      pokemonList.push(Suicune);
@@ -28,7 +27,7 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/245.json";
      pokeStats(Suicune)
    }
  }
- newcall.open("GET", apiLink, true);
+ newcall.open("GET", API, true);
  newcall.send();
 
 }
@@ -51,7 +50,7 @@ function pokeStats(Suicune) {
 
 function getZapdos() {
 
-let apiLink = "https://fizal.me/pokeapi/api/v2/id/145.json";
+let API = "https://fizal.me/pokeapi/api/v2/id/145.json";
 
  var newcall = new XMLHttpRequest();
  newcall.onreadystatechange = function() {
@@ -63,8 +62,7 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/145.json";
       hp: pokeinfo.stats[5].base_stat,
       attack: pokeinfo.stats[4].base_stat,
       defense: pokeinfo.stats[3].base_stat,
-      ability: pokeinfo.abilities[0].ability.name,
-      id: pokeinfo.id
+      ability: pokeinfo.abilities[0].ability.name
 
 
      }
@@ -73,7 +71,7 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/145.json";
      pokeStats(Zapdos)
    }
  }
- newcall.open("GET", apiLink, true);
+ newcall.open("GET", API, true);
  newcall.send();
 
 }
@@ -96,7 +94,7 @@ function pokeStats(Zapdos) {
 
 function getMoltres() {
 
-let apiLink = "https://fizal.me/pokeapi/api/v2/id/146.json";
+let API = "https://fizal.me/pokeapi/api/v2/id/146.json";
 
  var newcall = new XMLHttpRequest();
  newcall.onreadystatechange = function() {
@@ -108,8 +106,7 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/146.json";
       hp: pokeinfo.stats[5].base_stat,
       attack: pokeinfo.stats[4].base_stat,
       defense: pokeinfo.stats[3].base_stat,
-      ability: pokeinfo.abilities[0].ability.name,
-      id: pokeinfo.id
+      ability: pokeinfo.abilities[0].ability.name
 
 
      }
@@ -118,7 +115,7 @@ let apiLink = "https://fizal.me/pokeapi/api/v2/id/146.json";
      pokeStats(Moltres)
    }
  }
- newcall.open("GET", apiLink, true);
+ newcall.open("GET", API, true);
  newcall.send();
 
 }
