@@ -2,7 +2,22 @@
 
 pokemonList = [];
 
-//
+// Trainer class
+
+class Trainer {
+  constructor(trainer) {
+    this.trainer = trainer;
+    this.pokemonList = [];
+
+  }
+
+  all() {
+    return this.pokemonList;
+  }
+
+  let trainer = new Trainer('♔ĬฬÞẽŘąŦøŘ♔');
+
+// Suicune
 
 function getSuicune() {
 
